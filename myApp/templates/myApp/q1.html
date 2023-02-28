@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>안혜준 201824523 My Database</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <button onclick="location.href='/..' ">back</button>
+    <h2>1. Example query result:</h2>
+    <h3>Find the average hard disk size of PCs</h3>
+    <table class="query">
+        <tr>
+            <td>query statement :</td>
+            <td>"SELECT AVG(hd) FROM pcs"</td>
+        </tr>
+    </table>
+
+    Result : {{output1.avgHDSizePC}}
+</body>
+</html>

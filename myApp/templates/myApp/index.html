@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>안혜준 201824523 My Database</title>
+    <style>
+        input {
+            width: 400px;
+            height: 40px;
+            margin: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="create" method="post">
+        {% csrf_token %}
+        <input type="submit" name="CREATE" value="CREATE TABLE" />
+    </form>
+    <form action="insert" method="post">
+        {% csrf_token %}
+        <input type="submit" name="INSERT" value="INSERT" />
+    </form>
+    <form action="q1" method="post">
+        {% csrf_token %}
+        <input type="submit" name="query" value="QUERY1" />
+    </form>
+    <form action="q2" method="post">
+        {% csrf_token %}
+        <input type="submit" name="query" value="QUERY2" />
+    </form>
+    <form action="q3" method="post">
+        {% csrf_token %}
+        <input type="submit" name="query" value="QUERY3" />
+    </form>
+    <form action="q4" method="post">
+        {% csrf_token %}
+        <input type="submit" name="query" value="QUERY4" />
+    </form>
+    <form action="clear" method="post">
+        {% csrf_token %}
+        <input type="submit" name="clear" value="clear" />
+    </form>
+</body>
+</html>

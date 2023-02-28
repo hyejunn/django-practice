@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>안혜준 201824523 My Database</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <button onclick="location.href='/..' ">back</button>
+    <h3>2. Find the average speed of laptop for each maker</h3>
+    <table class="query">
+        <tr>
+            <td>query statement :</td>
+            <td>"SELECT maker, AVG(speed)<br>
+                &nbsp;FROM products NATURAL JOIN laptops<br>
+                &nbsp;GROUP BY maker;"</td>
+        </tr>
+    </table>
+    Result :
+    <table>
+        <thead>
+            <tr>
+                <th>maker</th>
+                <th>avgSpeedLaptop</th>
+            </tr>
+        </thead>
+    {% for i in output2 %}
+        <tr>
+            <td>{{ i.maker }}</td>
+            <td>{{ i.avgSpeedLaptop }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+
+
+    Result : {{output1.avgHDSizePC}}
+</body>
+</html>

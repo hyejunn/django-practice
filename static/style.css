@@ -1,0 +1,19 @@
+table {
+    width: 75%;
+    border: 1px solid #444444;
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+}
+th, td {
+    border: 1px solid #444444;
+}
+.query {
+    border: hidden;
+    width: auto;
+}
+.query * {
+    vertical-align: top;
+    text-align: left;
+    border: hidden;
+}
