@@ -53,11 +53,11 @@ DATABASES = {
 }
 ```
 
-## Install
+## How to run
 [database 설정](#setting) 후에 실행 가능합니다.
 
 ### window(cmd)
 ```
-"projectEnv/Scripts/activate"
-python manage.py runserver
+> "projectEnv/Scripts/activate"
+> python manage.py runserver
 ```
